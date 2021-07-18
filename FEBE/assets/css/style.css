@@ -1,0 +1,144 @@
+:root{
+    --notwhite:rgba(255, 255, 255, 0.856);
+    --exlight: rgb(242, 247, 250);
+    --lighter:#9ec0d3;
+    --light:#6496ad;
+    --dark:#376279;
+    --lightAccent:#887d72;
+    --accent: #534b43;
+    --exdark: #0a043b;   
+}
+body{
+    background-color:var(--exlight);
+}
+ul{
+    list-style: none;
+}
+/* Header Nav and Search */
+#navbar{
+    display:flex;
+    width:100%;
+    justify-content:flex-end;
+    padding:0px;
+    align-items:center;
+}
+#navbarNav{
+    display:flex;
+    /* width:100%;
+    justify-items: flex-end; */
+}
+#navbar-nav{
+    display:flex;
+    margin:0px;
+    align-items:center;
+}
+.nav-item{
+    width:auto;
+}
+.nav-item a{
+    color:var(--lightAccent);
+}
+#search{
+    color:var(--lightAccent);
+
+}
+input{
+    margin: 1rem;
+}
+/* Jumbotron logo */
+.jumbotron{
+    
+    /* background-image:linear-gradient(rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)); */
+    text-align: center;
+    background-color: var(--lighter);
+    border: 3px solid var(--dark);
+    padding: 0px;
+
+}
+#jumboimage{
+    position:relative;
+    top:0;
+    left:-575px;
+    height:30%;
+    width: 20%;
+    -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+      mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.emletters{
+    font-size: 5em;
+    font-weight: 400;
+    font: italic 5em "Fira Sans", serif;
+    color: var(--accent);
+    padding-left: 30px;
+}
+h1{
+    font-size: 2rem;
+    color: var(--lightAccent);
+    margin:0px;
+    flex-wrap: wrap;
+}
+/* main section feed and aside */
+.explore{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.exploreOptions{
+    display:flex;
+}
+.mainOption{
+    padding:5px;
+    align-items: center;
+    border: 2px solid var(--exdark);
+    border-radius: 50%;
+    height: 50%;
+    width: 20%;
+    margin: 5px;
+    text-align: center;
+    background-color: #356e8d;
+    color:#fff;
+}
+.mainLinks{
+    display: flex;
+    justify-content: center;
+}
+#main{
+    display:flex;
+}
+.aside{
+    /* width:30%; */
+    /* display:flex;
+    flex-direction: column; */
+    background-color: var(--notwhite);
+    border-radius: 15px;
+    border: 1px solid rgb(231, 229, 229);
+    /* border: 1px solid var(--dark); */
+}
+.sidebar{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+.history{
+    /* border: 1px solid var(--dark); */
+    border-radius:15px;
+    background-color: var(--notwhite);
+    border: 1px solid rgb(231, 229, 229);
+    margin: 5px 0px;
+}
+.profile{
+    width: 15%;
+    height:15%;
+    margin-right:2px;
+    border: 2px solid var(--light);
+    border-radius: 20px;
+}
+#feed{
+    /* width: 70%; */
+    border: 3px solid var(--dark);
+    margin-left: 5px;
+}

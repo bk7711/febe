@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/bff1c112e6.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FEBE</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style1.css">
+    </head>
+    <body>
+        <header>
+            <div class = "top">
+                            <!-- Navbar -->
+                    <nav id = "navbar" class="container-fluid">
+                        <div>
+                            <h3 id = "head"><a href="#home">FEBE</a> </h3>
+                        </div>
+                    
+                        <div id="navbarNav">
+                            
+                        <ul id="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#home"><i class="fas fa-home"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#notifications"><i class="fas fa-flag"></i></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" role= "button" href="#profile" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#settings">settings</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">One more separated link</a></li>
+                                    </ul>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="#settings"><i class="fas fa-cog"></i></a>
+                                </li> -->
+                                
+                        </ul>
+
+                        <div id = "search">
+                            <label for="#search">Search</label>
+                            <input type="text">
+                        </div>
+                        </div>
+                    </nav>
+                    <!-- Logo -->
+                    <hr>
+                <div class = "jumbotron container">
+                        <!-- <img id = "jumboimage" src="assets/images/aaron-burden-6jYoil2GhVk-unsplash.jpg"> -->
+                        <h1 class = "logo" ><span class ="emletters">F</span>or<span class ="emletters">E</span>ducators<span class ="emletters">B</span>y<span class ="emletters">E</span>ducators</h1>
+                        
+                    </div>
+            </div>
+        
+        </header>
+        
+        
+            <!-- Selections above feed -->
+        <div class = "explore container" id="mainMenu">
+                <div class = "mainOption">
+                    <a class = "mainLinks" id = "curriculum" href="#curriculum"></a>
+                    <p>Curriculum</p>
+                </div>
+                <div class = "mainOption">
+                    <a class = "mainLinks" id = "reviews" href="#reviews"></a>
+                    <p>Reviews</p>
+                </div>
+                <div class = "mainOption">  
+                    <a class = "mainLinks" id = "articles" href="#articles"></a>
+                    <p>Articles</p>
+                </div>
+                <div class = "mainOption">
+                    <a class = "mainLinks" id = "research" href="#research"></a>
+                    <p>Research</p>
+                </div>
+            </ul>
+        </div>
+        <div class = "container-fluid">
+            <main id="main" class = "row">
+        <!-- sidebar menu -->
+                <aside class = "col-md-2">
+                    <!-- check for making the aside collapse. May have to be a css component -->
+                    <div class="aside" >
+                        
+                        <ul class = "sidebar">
+                            <li class = "sideOption" id = "myProfile">
+                                <a href="#profile"><img class = "profile" src="assets/images/headshot.jpg" alt="Profile">Profile</a>
+                            </li>
+                            <li class = "sideOption" id = "myNetwork">
+                                <a href="#myNetwork">My Network</a>
+                            </li>
+                            <li class = "sideOption" id = "myMessages">
+                                <a href="#myMessages">My Messages</a>
+                            </li>
+                            <li class = "sideOption" id = "myProgram">
+                                <a href="#myProgram">My Program</a>
+                            </li>
+                            <li class = "sideOption" id = "myArticles">
+                                <a href="#myArticles">My Articles</a>
+                            </li>
+                            <!-- <li class = "sideOption" id = "myPortfolio">
+                                <a href="#myPortfolio"><p>My Portfolio</p></a>
+                            </li> -->
+                            
+                        </ul>
+                    </div>
+                    <div class = "history">
+                        <ul id = "history">
+                            <li>Recents</li>
+                            <li><i class="fas fa-book"><a href="#">Program</a></i></li>
+                            <li><i class="fas fa-book"><a href="#">Program</a></i></li>
+                            <li><i class="far fa-newspaper"><a href="#">Article</a></i></li>
+                            <li><i class="fas fa-university"><a href="#">Research</a></i></li>
+                        </ul>
+                    </div>
+            
+                </aside>
+            <!-- Feed -->
+                <div id="feed" class = "col-md-9 order-1 order-md-2">
+                    <!-- put option to filter via a popup window or dropdown -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum obcaecati veritatis itaque labore veniam esse asperiores quisquam, sed assumenda quae reprehenderit in quibusdam deserunt voluptatem? Dolores iusto eveniet corporis modi!
+                </div>
+            </main>
+       
+        </div>
+        
+
+       <!-- Footer -->
+        <footer>
+            <nav class="navbar fixed-bottom navbar-light bg-light">
+                <ul class = "footer">
+                    <li class = "sideOption" id = "myProfile">
+                        <a href="#profile"><img class = "profile" src="assets/images/headshot.jpg" alt="Profile"><p>Profile</p></a>
+                    </li>
+                    <li class = "sideOption" id = "myNetwork">
+                        <a href="#myNetwork"><p>My Network</p><i class="fas fa-network-wired"></i></a>
+                    </li>
+                    <li class = "sideOption" id = "myMessages">
+                        <a href="#myMessages"><p>My Messages</p><i class="far fa-envelope"></i></a>
+                    </li>
+                    <li class = "sideOption" id = "myProgram">
+                        <a href="#myProgram"><p>My Program</p><i class="fas fa-book"></i></a>
+                    </li>
+                    <li class = "sideOption" id = "myArticles">
+                        <a href="#myArticles"><p>My Articles</p><i class="far fa-bookmark"></i></a>
+                    </li>
+                    <!-- <li class = "sideOption" id = "myPortfolio">
+                        <a href="#myPortfolio"><p>My Portfolio</p></a>
+                    </li> -->
+                
+                </ul>
+            </nav>
+            
+        </footer>
+        
+        <script src="assets/javascript/script.js" async defer></script>
+    </body>
+</html>

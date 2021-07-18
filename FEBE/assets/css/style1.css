@@ -1,0 +1,341 @@
+:root{
+    --notwhite:rgba(255, 255, 255, 0.856);
+    --exlight: rgb(242, 247, 250);
+    --lighter:#9ec0d3;
+    --light:#6496ad;
+    --dark:#376279;
+    --lightAccent:#887d72;
+    --accent: #534b43;
+    --exdark: #0a043b;   
+}
+html,body { 
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    background-color:var(--exlight);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+ul{
+    list-style: none;
+}
+/* Header Nav and Search */
+#navbar{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    justify-content:space-between;
+    padding:0px;
+    align-items:center;
+}
+#head a{
+    color: var(--accent);
+    /* font: bold italic 2em "Fira Sans", serif; */
+    font-style: italic;
+    text-decoration: none;
+    padding: 10px 0px 0px 5px;
+    margin:0px;
+}
+#head a:hover{
+    color: var(--light);
+}
+#navbarNav{
+    display:flex;
+    flex-direction: column;
+}
+#navbar-nav{
+    display:flex;
+    margin:0px;
+    align-items:center;
+}
+.nav-item{
+    width:auto;
+    padding:0px;
+}
+.nav-item a:hover{
+    color:var(--light);
+}
+.nav-item a{
+    color:var(--lightAccent);
+    padding-bottom: 2px;
+}
+#search{
+    display:none;
+}
+hr{
+    display:none;
+}
+.jumbotron{
+    
+    /* background-image:linear-gradient(rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)); */
+    text-align: center;
+    background-color: var(--lighter);
+    border: 1px solid var(--dark);
+    border-top: none;
+    padding: 0px;
+    margin-bottom: 10px;
+
+}
+.emletters{
+    /* font: italic 2em "Fira Sans", serif; */
+    color: var(--accent);
+    font-style: bold;
+    padding-left: 15px;
+    font-size:2em;
+    
+}
+span:first-of-type{
+    padding-left: 7px;
+}
+h1{
+    font-size: 1rem;
+    color: var(--lightAccent);
+    margin:0px;
+    width:100%;
+    font-weight: 600;
+}
+.explore{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.explore{
+    display:flex;
+}
+.mainOption{
+    justify-content: space-between;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    text-align: center;
+
+}
+.mainLinks{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: var(--lightAccent);
+    border: 2px solid var(--exdark);
+    border-radius: 50%;
+    height:40px;
+    width:40px;
+}
+
+.mainLinks :hover{
+    border-style: double;
+}
+.mainOption p{
+    margin:0px;
+}
+.mainOption i{
+    height: 40px;
+    width: 40px;
+    color: var(--exdark);
+}
+#mainMenu{
+    padding-bottom: 10px;
+}
+#curriculum{
+    background-image: url("../images/books.svg");
+    background-size: cover;
+}
+#reviews{
+    background-image: url("../images/review.svg");
+    background-size:cover;
+    
+}
+#articles{
+    background-image:url("../images/application.svg");
+    background-size:cover;
+}
+#research{
+    background-image: url("../images/research.svg");
+    background-size:cover;
+    padding-right:0px;
+    padding-left:0px;
+}
+#main{
+    display:flex;
+    height:100%;
+}
+#feed{
+    background-color: var(--notwhite);
+    border-radius: 15px;
+    margin: 5px;
+}
+aside{
+    display:none;
+}
+.profile{
+    width: 20px;
+    height:20px;
+    border: 2px solid var(--light);
+    border-radius: 20px;
+}
+.footer{
+    display:flex;
+}
+.sideOption a{
+    color: var(--lightAccent);
+    justify-content: space-around;
+}
+.sideOption p{
+    display:none;
+}
+.history{
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+#search{
+    display: inline-block;
+    color:var(--lightAccent);
+}
+.nav-item{
+    font-size: 1.2rem;
+    z-index: 2;
+}
+
+.emletters{
+    font-size: 4rem;
+    font-weight: 500;
+    z-index: 2;
+}
+h1{
+    font-size: 2rem;
+}
+input{
+        margin: 5px;
+        height: 1.5rem;
+}
+hr{
+    display:block;
+    background-color: var(--dark);
+    width:100%;
+    height:3px;
+    margin:5px 0px;
+    box-shadow: 0px 2px 0px var(--lightAccent);
+}
+
+.jumbotron{
+    max-width: 75%;
+    text-align: center;
+    background: none;
+    border:none;
+    padding: 0px;
+}
+header{
+    position:relative;
+}
+.top::after{
+    content:"";
+    background-image: url("../images/national-cancer-institute-N_aihp118p8-unsplash.jpg");
+    background-size:cover;
+    opacity:0.2;
+    position: absolute;
+    top:0px;
+    right:0px;
+    bottom: 0px;
+    left:0px;
+    z-index: -1;
+    
+}
+.row{
+    display:flex
+}
+.mainLinks{
+    height:60px;
+    width:60px;
+}
+.mainLinks:hover{
+    box-shadow: 0 0 0 3px rgb(195, 250, 85);
+}
+.mainLinks{
+    text-decoration: none;
+}
+#curriculum{
+    background-image: url("../images/books.svg");
+    background-size: cover;
+}
+#reviews{
+    background-image: url("../images/review.svg");
+    background-size:cover;
+}
+#articles{
+    background-image:url("../images/application.svg");
+    background-size:cover;
+}
+#research{
+    background-image: url("../images/research.svg");
+    background-size:cover;
+}
+aside{
+    /* width:30%; */
+    display:inline-block;
+    margin-left: 10px;
+    /* border: 1px solid var(--dark); */
+}
+.sidebar{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--notwhite);
+    border-radius: 15px;
+}
+#history{
+    /* border: 1px solid var(--dark); */
+    border-radius:15px;
+    background-color: var(--notwhite);
+    margin: 10px 0px;
+    color:var(--lightAccent);
+}
+.profile{
+    width: 15%;
+    height:15%;
+    margin-right:2px;
+    border: 2px solid var(--light);
+    border-radius: 20px;
+}
+#feed{
+    max-width: 70%;
+    border: 3px solid var(--dark);
+    margin-left: 15px;
+}
+.history{
+    display:inline;
+    margin-top:5px;
+}
+.fixed-bottom{
+    display:none;
+}
+#history li a{
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    color: var(--lightAccent);
+    font-weight: 600;
+    padding:3px;
+}
+}
